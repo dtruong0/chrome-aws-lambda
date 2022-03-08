@@ -195,11 +195,11 @@ class Chromium {
    * Overloads puppeteer with useful methods and returns the resolved package.
    */
   static get puppeteer(): PuppeteerNode {
-    require('./puppeteer/lib/Browser')
-    require('./puppeteer/lib/BrowserContext')
-    require('./puppeteer/lib/ElementHandle')
-    require('./puppeteer/lib/FrameManager')
-    require('./puppeteer/lib/Page')
+    require('/opt/nodejs/node_modules/chrome-aws-lambda/build/puppeteer/lib/Browser')
+    require('/opt/nodejs/node_modules/chrome-aws-lambda/build/puppeteer/lib/BrowserContext')
+    require('/opt/nodejs/node_modules/chrome-aws-lambda/build/puppeteer/lib/ElementHandle')
+    require('/opt/nodejs/node_modules/chrome-aws-lambda/build/puppeteer/lib/FrameManager')
+    require('/opt/nodejs/node_modules/chrome-aws-lambda/build/puppeteer/lib/Page')
 
     try {
       return require('puppeteer');
